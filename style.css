@@ -1,0 +1,294 @@
+@import 'https://fonts.googleapis.com/css?family=Karla'; 
+@import'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=Mont';
+
+
+*{  
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;  
+    font-family: sans-serif;
+}
+body{
+	min-height: 100vh;
+	background: linear-gradient(15deg, #ffffff, rgb(174, 166, 229));
+}
+
+header{
+    background-color: #101026;
+    background-size: cover;
+    height: 100px;
+}
+
+h1#h1{
+    font-size: 20pt;
+    display: flex;
+    font-family: Karla;
+    justify-content: center;
+    margin-top: 20pt;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+
+li{
+    
+    list-style: none;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13pt;
+
+}
+
+.nav-bar{
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+.texto-logo{
+    font-size: 2rem;
+    display: flex;
+    align-items: start;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.logo{
+    width: 90px;
+    height: 90px;
+    margin: -25px auto;
+    margin-right: 20px;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-right: 100px;
+    margin-top: 26px;
+}
+
+.nav-link{
+    transition: 0.5s ease;
+}
+
+.nav-link:hover{
+    color: rgb(197, 92, 110);
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display:block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        border-radius: 0 0 20px 20px;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}
+
+
+/*CONTEÚDO*/
+.center-div{
+    width: 80%; /* Defina a largura desejada */
+    margin: 40pt auto; /* Isso centralizará horizontalmente */
+}
+section#sobre h2{
+   font-family: "Karla",sans-serif;
+   text-align: center; 
+   font-weight: bolder;
+   text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+}
+section#sobre p{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(15deg, #363664,#8888b3 );
+    border-radius: 50px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+section#sobre:hover{
+    transform: scale(1.1);
+}
+
+section#serv h2{
+    font-family: Karla;
+    text-align: center; 
+    text-shadow: 2px 2px 2px rgba(0,0,0,.3);
+ }
+ section#serv p{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(15deg, #363664,#8888b3 );
+    border-radius: 50px;
+    padding: 20px;
+    transition: transform ease;
+ }
+
+ section#serv:hover{
+    transform: scale(1.1);
+ }
+
+ section#contato h2{
+    font-family: Karla;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.3); 
+ }
+ section#contato p{
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(15deg, #363664,#8888b3 );
+    border-radius: 50px;
+    padding: 20px;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+ }
+
+ section#contato:hover{
+    transform: scale(1.1);
+ }    
+
+.tel{
+    position: absolute;
+    display: flex;
+    max-width: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 70%;
+    margin-top: -20px;
+    
+}
+@media (max-width: 768px) {
+    .tel {
+        margin-top: auto;
+        display: block;
+        margin-left: 83%;
+    }
+    section#contato{
+        margin-left: 10%;
+    }
+    section#sobre h2{
+        margin-left: 10%;
+    }
+    section#serv h2{
+        margin-left: 13%;
+    }
+}
+
+img#foto-helena{
+    display: flex;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+img#foto-helena:hover {
+    transform: scale(1.2); /* Aplica um zoom de 10% (1.1x) na imagem */
+}
+
+footer{
+    margin-top: 10px;
+}
+
+p#copy{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.border{
+    display: block;
+    background-color: #363664;
+    border-bottom: 1px solid #101026;
+    margin-left: 27rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 500px;
+}
+.border-serv{
+    display: block;
+    background-color: #363664;
+    border-bottom: 1px solid #101026;
+    margin-left: 19rem;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 500px;
+}
+.border-hell{
+    display: block;
+    background-color: #363664;
+    border-bottom: 1px solid #101026;
+    margin-left: 19rem;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    width: 500px;
+}
+
+
+@media (max-width: 768px) {
+    .border{
+        margin-left: 9%;
+    }
+    .border-serv{
+        margin-left: 11%;
+    }
+    .border-hell{
+        margin-left: 11%;
+    }
+}    

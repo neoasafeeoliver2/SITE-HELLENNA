@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Karla'; 
+@import'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=Mont';
+
+*{  
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;  
+    font-family: sans-serif;
+}
+
+.conteudo{
+        margin: auto;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: "Karla", sans-serif; /* Escolha uma fonte elegante e legível */
+        font-size: 16px; /* Tamanho de fonte adequado */
+        line-height: 1.5; /* Espaçamento entre linhas para melhor legibilidade */
+        color: #ffffff; /* Cor do texto */
+        text-align: justify; /* Justificar o texto para uma aparência mais profissional */
+        padding: 20px; /* Adicionar um espaçamento interno para destacar o parágrafo */
+        background: linear-gradient(5deg, #363664,#8888b3 );
+        border-radius: 50px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+.conteudo:hover{
+    transform: scale(1.3);
+}    
